@@ -36,10 +36,10 @@
 
         default_layer {
             bindings = <
-&kp Q               &kp W         &kp E         &kp R                        &kp T                                                        &kp Y        &kp U  &lt 5 I    &kp O    &kp P
-&mt LEFT_CONTROL A  &kp S         &kp D         &kp F                        &kp G                   &kp LS(LG(S))         &kp MINUS      &kp H        &kp J  &kp K      &kp L    &kp SQT
-&mt LEFT_SHIFT Z    &kp X         &kp C         &kp V                        &kp B                   &kp COLON             &kp SEMICOLON  &kp N        &kp M  &kp COMMA  &kp DOT  &kp SLASH
-&kp LEFT_SHIFT      &kp LEFT_WIN  &kp LEFT_ALT  &lt_to_layer_0 5 INT_HENKAN  &lt_to_layer_0 1 SPACE  &kp INT_MUHENKAN      &kp DELETE     &lt 2 ENTER                             &lt_to_layer_0 6 DELETE
+&kp Q               &kp W         &kp E         &kp R                           &kp T                                                      &kp Y            &kp U  &lt 5 I    &kp O    &kp P
+&mt LEFT_CONTROL A  &kp S         &kp D         &kp F                           &kp G                   &kp LS(LG(S))       &kp MINUS      &kp H            &kp J  &kp K      &kp L    &kp ENTER
+&mt LEFT_SHIFT Z    &kp X         &kp C         &kp V                           &kp B                   &kp COLON           &kp SEMICOLON  &kp N            &kp M  &kp COMMA  &kp DOT  &kp SLASH
+&kp LEFT_SHIFT      &kp LEFT_WIN  &kp LEFT_ALT  &lt_to_layer_0 5 LANG_HIRAGANA  &lt_to_layer_0 1 SPACE  &kp LANGUAGE_5      &kp DELETE     &lt 2 BACKSPACE                             &lt_to_layer_0 6 DELETE
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
@@ -47,10 +47,10 @@
 
         FUNCTION {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                       &kp F1  &kp F2  &kp F3  &kp F4  &kp F5
-&trans  &trans  &trans  &trans  &trans  &trans      &kp F13  &kp F6  &kp F7  &kp F8  &kp F9  &kp F10
-&trans  &trans  &trans  &trans  &trans  &trans      &trans   &trans  &trans  &trans  &trans  &kp F11
-&trans  &trans  &trans  &trans  &trans  &trans      &trans   &trans                          &kp F12
+&trans     &kp LC(C)  &kp LC(V)      &kp LC(A)  &kp LC(F)                           &kp F1  &kp F2    &mkp MB2  &lt_to_layer_0 5 O  &kp F5
+&kp LC(Z)  &kp LC(X)  &kp LS(LC(V))  &kp LC(W)  &kp LC(LS(T))  &trans      &kp F13  &kp F6  &mkp MB1  &kp F8    &kp F9              &kp F10
+&trans     &trans     &trans         &trans     &trans         &trans      &trans   &trans  &trans    &trans    &trans              &kp F11
+&trans     &trans     &trans         &trans     &trans         &trans      &trans   &trans                                          &kp F12
             >;
         };
 
@@ -76,7 +76,7 @@
 
         MOUSE {
             bindings = <
-&trans  &kt LC(C)  &kt LC(V)  &kp LC(A)  &trans                      &trans     &trans    &trans     &trans    &trans
+&trans  &kt LC(C)  &kt LC(V)  &kp LC(A)  &trans                      &trans     &trans    &mkp MB2   &trans    &trans
 &trans  &trans     &trans     &trans     &trans  &trans      &trans  &mkp LCLK  &mkp MB1  &mkp RCLK  &mkp MB2  &trans
 &trans  &trans     &trans     &trans     &trans  &trans      &trans  &trans     &trans    &trans     &trans    &trans
 &trans  &trans     &trans     &trans     &trans  &trans      &trans  &trans                                    &trans
